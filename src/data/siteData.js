@@ -1,7 +1,7 @@
-import mascotasJuntasImg from '../../assets/mascotas-juntas.jpg';
-import gatosJuntosImg from '../../assets/gatos-juntos.jpg';
-import perrosAtardecerImg from '../../assets/perros-atardecer.jpg';
-import cerditoImg from '../../assets/cerdito.jpg';
+import mascotasJuntasImg from '../assets/mascotas-juntas.jpg';
+import gatosJuntosImg from '../assets/gatos-juntos.jpg';
+import perrosAtardecerImg from '../assets/perros-atardecer.jpg';
+import cerditoImg from '../assets/cerdito.jpg';
 
 export const SITE_CONFIG = {
   name: "PataAmiga",

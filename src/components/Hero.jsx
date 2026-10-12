@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sparkle, ShieldCheck, Heart, CalendarCheck, WhatsappLogo } from '@phosphor-icons/react';
 import { SITE_CONFIG } from '../data/siteData';
-import heroImg from '../../assets/hero-pataamiga.png';
+import heroImg from '../assets/hero-pataamiga.png';
 
 export default function Hero({ onOpenAppointment, whatsappClean }) {
   return (

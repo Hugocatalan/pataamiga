@@ -3,7 +3,7 @@
   position: relative;
   padding: 84px clamp(20px, 5vw, 64px);
   color: white;
-  background: #0f3827 url("/assets/perros-atardecer.jpg") center / cover fixed;
+  background: #0f3827 url("../assets/perros-atardecer.jpg") center / cover fixed;
 }
 
 .patients-overlay {

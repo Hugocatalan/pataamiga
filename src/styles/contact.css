@@ -11,7 +11,7 @@
 .contact-photo {
   min-height: 380px;
   border-radius: var(--radius-md);
-  background: url("/assets/mascotas-juntas.jpg") center / cover no-repeat;
+  background: url("../assets/mascotas-juntas.jpg") center / cover no-repeat;
   box-shadow: var(--shadow-sm);
 }
 

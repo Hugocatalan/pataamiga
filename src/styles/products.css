@@ -57,7 +57,7 @@
 .product-visual {
   position: relative;
   min-height: 420px;
-  background: url("/assets/perros-atardecer.jpg") center / cover no-repeat;
+  background: url("../assets/perros-atardecer.jpg") center / cover no-repeat;
 }
 
 .product-visual::after {

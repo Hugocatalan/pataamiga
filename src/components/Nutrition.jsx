@@ -1,6 +1,6 @@
 import React from 'react';
 import { BowlFood, ArrowRight } from '@phosphor-icons/react';
-import nutricionImg from '../../assets/nutricion-mascotas.jpg';
+import nutricionImg from '../assets/nutricion-mascotas.jpg';
 
 export default function Nutrition({ whatsappClean }) {
   return (
