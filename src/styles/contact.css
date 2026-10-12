@@ -1,0 +1,145 @@
+/* CONTACTO Y MAPA */
+.contact-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.1fr 0.9fr;
+  align-items: stretch;
+  gap: 28px;
+  padding: 64px clamp(20px, 5vw, 64px);
+  background: #e5ecd9;
+}
+
+.contact-photo {
+  min-height: 380px;
+  border-radius: var(--radius-md);
+  background: url("/assets/mascotas-juntas.jpg") center / cover no-repeat;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-info {
+  align-self: center;
+}
+
+.contact-info h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: clamp(30px, 3.5vw, 42px);
+  color: var(--forest-dark);
+  margin: 8px 0 12px;
+}
+
+.contact-info > p {
+  font-size: 14.5px;
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-detail svg {
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-detail div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail strong {
+  font-size: 13.5px;
+  color: var(--forest-dark);
+}
+
+.contact-detail span {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.contact-whatsapp {
+  margin-top: 10px;
+}
+
+.map-card {
+  align-self: center;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: var(--paper);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.map-placeholder {
+  min-height: 250px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  padding: 20px;
+  color: var(--forest-dark);
+  background: #eef2e6;
+  border: 1px dashed #ced8c3;
+}
+
+.map-placeholder .map-pin-icon {
+  color: #df4436;
+}
+
+.map-placeholder strong {
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+}
+
+.map-subtext {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.map-card > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  color: var(--forest);
+  font-weight: 800;
+  font-size: 13.5px;
+  border-radius: var(--radius-sm);
+  background: var(--cream);
+  transition: background 0.2s ease;
+}
+
+.map-card > a:hover {
+  background: var(--mint);
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .map-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 860px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 48px 18px 80px;
+    gap: 24px;
+  }
+  .contact-photo {
+    display: none;
+  }
+}

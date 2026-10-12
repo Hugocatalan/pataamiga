@@ -1,0 +1,150 @@
+/* PRODUCTOS / PET SHOP */
+.products-section {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  min-height: 480px;
+  background: #e3ebd2;
+  overflow: hidden;
+}
+
+.products-copy {
+  padding: 64px clamp(24px, 6vw, 84px);
+  align-self: center;
+}
+
+.products-copy h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: clamp(36px, 4.2vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: var(--forest-dark);
+  margin: 14px 0 16px;
+}
+
+.products-copy h2 em {
+  font-style: normal;
+  color: var(--green);
+}
+
+.products-copy p {
+  max-width: 440px;
+  color: #4b6351;
+  font-size: 15.5px;
+  margin: 0 0 26px;
+}
+
+.product-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 28px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b5341;
+}
+
+.product-tags span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-tags svg {
+  color: var(--green);
+}
+
+.product-visual {
+  position: relative;
+  min-height: 420px;
+  background: url("/assets/perros-atardecer.jpg") center / cover no-repeat;
+}
+
+.product-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(227, 235, 210, 0.35) 0%, transparent 40%);
+}
+
+.product-badge {
+  position: absolute;
+  z-index: 2;
+  right: 10%;
+  top: 14%;
+  width: 114px;
+  height: 114px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--green);
+  color: white;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow-lg);
+  font-size: 12.5px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.product-badge svg {
+  margin: 0 auto 4px;
+}
+
+.floating-product {
+  position: absolute;
+  z-index: 2;
+  bottom: 14%;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: rgba(255, 253, 240, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid white;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--forest-dark);
+}
+
+.floating-product.second {
+  left: auto;
+  right: 12%;
+  bottom: 8%;
+}
+
+.floating-product svg {
+  color: var(--green);
+}
+
+@media (max-width: 860px) {
+  .products-section {
+    grid-template-columns: 1fr;
+  }
+  .product-visual {
+    min-height: 280px;
+  }
+  .floating-product {
+    display: none;
+  }
+  .product-badge {
+    width: 90px;
+    height: 90px;
+    font-size: 11px;
+    top: 12px;
+    right: 12px;
+    border-width: 3px;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-copy {
+    padding: 42px 18px 28px;
+  }
+  .products-copy h2 {
+    font-size: 34px;
+  }
+}
