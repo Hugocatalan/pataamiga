@@ -28,6 +28,8 @@ import {
   Sparkle
 } from '@phosphor-icons/react';
 import { SITE_CONFIG, SERVICES, WHY_US, GALLERY_IMAGES } from './data/siteData';
+import heroImg from '../assets/hero-pataamiga.png';
+import nutricionImg from '../assets/nutricion-mascotas.jpg';
 
 const iconMap = {
   Stethoscope,
@@ -149,7 +151,7 @@ export default function App() {
           <div className="hero-banner-container">
             <div className="hero-frame">
               <img
-                src="/assets/hero-pataamiga.png"
+                src={heroImg}
                 alt="PataAmiga: animales sonrientes y felices reunidos en un día soleado"
                 fetchPriority="high"
                 className="hero-image-display"
@@ -329,7 +331,7 @@ export default function App() {
         <section className="about-section section" id="nosotros">
           <div className="about-photo">
             <img 
-              src="/assets/nutricion-mascotas.jpg" 
+              src={nutricionImg} 
               alt="Perro y gato junto a un plato de alimento balanceado y saludable en la clínica veterinaria" 
               loading="lazy" 
             />

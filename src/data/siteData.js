@@ -1,3 +1,8 @@
+import mascotasJuntasImg from '../../assets/mascotas-juntas.jpg';
+import gatosJuntosImg from '../../assets/gatos-juntos.jpg';
+import perrosAtardecerImg from '../../assets/perros-atardecer.jpg';
+import cerditoImg from '../../assets/cerdito.jpg';
+
 export const SITE_CONFIG = {
   name: "PataAmiga",
   commercialName: "PataAmiga | Veterinaria & Pet Shop",
@@ -83,9 +88,9 @@ export const WHY_US = [
 ];
 
 export const GALLERY_IMAGES = [
-  { src: "/assets/mascotas-juntas.jpg", alt: "Grupo de animales mirando a cámara" },
-  { src: "/assets/gatos-juntos.jpg", alt: "Grupo de animales domésticos juntos" },
-  { src: "/assets/perros-atardecer.jpg", alt: "Perros al aire libre disfrutando del atardecer" },
-  { src: "/assets/gatos-juntos.jpg", alt: "Gatos descansando juntos plácidamente" },
-  { src: "/assets/cerdito.jpg", alt: "Cerdito curioso y saludable mirando a cámara" }
+  { src: mascotasJuntasImg, alt: "Grupo de animales mirando a cámara" },
+  { src: gatosJuntosImg, alt: "Grupo de animales domésticos juntos" },
+  { src: perrosAtardecerImg, alt: "Perros al aire libre disfrutando del atardecer" },
+  { src: gatosJuntosImg, alt: "Gatos descansando juntos plácidamente" },
+  { src: cerditoImg, alt: "Cerdito curioso y saludable mirando a cámara" }
 ];
